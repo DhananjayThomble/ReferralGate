@@ -1,0 +1,25 @@
+{
+  "name": "referral_gate",
+  "version": "1.0.0",
+  "description": " a product to help Job seekers to request for referral from multiple companies they are interested to work in",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DhananjayThomble/ReferralGate.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "mongodb",
+    "restapi"
+  ],
+  "author": "Dhananjay Thomble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DhananjayThomble/ReferralGate/issues"
+  },
+  "homepage": "https://github.com/DhananjayThomble/ReferralGate#readme"
+}

@@ -5,7 +5,7 @@ const userSchema = Joi.object({
     name: Joi.string().required(),
     age: Joi.number().integer().min(18).required(),
     city: Joi.string().required(),
-    zipCode: Joi.string().regex(/^\d{5}$/).required(),
+    zipCode: Joi.string().regex(/^\d{5,6}$/).required(),
     password: Joi.string().required(),
 });
 

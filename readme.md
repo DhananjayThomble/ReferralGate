@@ -78,3 +78,6 @@ This guide will help you set up and run the application locally.
 - Response compression with Compression
 - Error handling middleware
 - Unit and integration tests with Jest
+
+4. **API Documentation:**
+   The Postman public API documentation can be found here: [ReferralGate API Documentation](https://www.postman.com/crimson-star-715026/workspace/dhananjaythomble/collection/9943108-9213ef36-16e1-4102-8ee0-064ab75d4d39?action=share&creator=9943108)

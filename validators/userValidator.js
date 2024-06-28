@@ -9,10 +9,23 @@ const userSchema = Joi.object({
     password: Joi.string().required(),
 });
 
+const userIdSchema = Joi.object({
+    userId: Joi.string().required().regex(/^[0-9a-fA-F]{24}$/), // mongoDB ObjectId format
+});
+
 const validateUser = (user) => {
     return userSchema.validate(user);
 };
 
+const validateUserId = (req, res, next) => {
+    const { error } = userIdSchema.validate({ userId: req.params.userId });
+    if (error) {
+        return res.status(400).send(error.details[0].message);
+    }
+    next();
+};
+
 module.exports = {
     validateUser,
+    validateUserId,
 };
